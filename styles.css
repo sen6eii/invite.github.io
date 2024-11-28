@@ -1,45 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #ffe5ec;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+.special-message {
+  font-size: 1.2rem;
   color: #ff6394;
-}
-
-button {
-  background: #ff6394;
-  color: white;
-  border: none;
-  padding: 10px 20px;
   margin-top: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #ff4773;
-}
-
-.hidden {
-  display: none;
-}
-
-.special-photo {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
 }
