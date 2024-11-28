@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz Mesiversario!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Feliz 7 Meses, Mi Amor! ❤️</h1>
+    <p>¿Tienes tiempo para vernos mañana? Por favor, elige el horario que prefieras:</p>
+
+    <form id="availability-form">
+      <label for="time">Selecciona un horario:</label>
+      <select id="time" name="time" required>
+        <option value="" disabled selected>Elige un horario</option>
+        <option value="morning">Mañana</option>
+        <option value="afternoon">Tarde</option>
+        <option value="evening">Noche</option>
+      </select>
+      <button type="submit">Confirmar</button>
+    </form>
+
+    <div id="riddle-section" class="hidden">
+      <p>Ahora, resuelve esta adivinanza para desbloquear una sorpresa:</p>
+      <p><strong>Es algo que siempre llega, pero nunca está aquí. ¿Qué es?</strong></p>
+      <input type="text" id="riddle-answer" placeholder="Escribe tu respuesta">
+      <button id="submit-riddle">Enviar Respuesta</button>
+    </div>
+
+    <div id="surprise-section" class="hidden">
+      <p>¡Respuesta correcta! Aquí está nuestra foto especial:</p>
+      <img src="nuestra_foto.jpg" alt="Nuestra foto" class="special-photo">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
