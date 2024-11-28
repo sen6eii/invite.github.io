@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadingMessages = [
     "Activando partículas de pancho de Tristán Narvaja...",
     "Generando texturas de barritas de cereal...",
-    "Afinando voz para cantar canciones cuya letra no sé...",
+    "Afinando voz para cantar canciones cuya letra no me acuerdo...",
     "Activando recuerdos felices con el amor de mi vida..."
   ];
 
