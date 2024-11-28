@@ -34,36 +34,6 @@ button:hover {
   background: #ff4773;
 }
 
-
-.special-photo {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ff6394;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  z-index: 10;
-}
-
-
-.special-message {
-  font-size: 1.2rem;
-  color: #ff6394;
-  margin-top: 10px;
-}
-
-
 .hidden {
   display: none;
 }
@@ -81,4 +51,16 @@ button:hover {
   align-items: center;
   font-size: 1.5rem;
   z-index: 10;
+}
+
+.special-photo {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.special-message {
+  font-size: 1.2rem;
+  color: #ff6394;
+  margin-top: 10px;
 }
