@@ -19,14 +19,16 @@ function showLoadingMessages() {
     currentMessageIndex++;
     setTimeout(showLoadingMessages, 2000); // Cambia el mensaje cada 2 segundos
   } else {
-    // Termina el loading y muestra el contenido principal
-    loadingScreen.classList.add("hidden");
-    mainContent.classList.remove("hidden");
+    // Finalizar el loading y mostrar el contenido principal
+    loadingScreen.style.display = "none";
+    mainContent.style.display = "block";
   }
 }
 
 // Iniciar el loading al cargar la página
-window.onload = showLoadingMessages;
+window.onload = () => {
+  showLoadingMessages();
+};
 
 // Lógica del formulario y la adivinanza
 document.getElementById("availability-form").addEventListener("submit", function (e) {
@@ -40,7 +42,7 @@ document.getElementById("availability-form").addEventListener("submit", function
 
 document.getElementById("submit-riddle").addEventListener("click", function () {
   const answer = parseInt(document.getElementById("riddle-answer").value, 10);
-  const correctAnswer = 29 * 71 - 34; // Cálculo esperado
+  const correctAnswer = 29 * 71 - 34; // Resultado esperado
 
   if (answer === correctAnswer) {
     document.getElementById("riddle-section").classList.add("hidden");
