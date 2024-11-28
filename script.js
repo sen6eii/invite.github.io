@@ -8,18 +8,18 @@ const loadingMessages = [
 
 let currentMessageIndex = 0;
 
-// Mostrar mensajes en el loading screen
 const loadingMessageElement = document.getElementById("loading-message");
 const mainContent = document.getElementById("main-content");
 const loadingScreen = document.getElementById("loading-screen");
 
+// Función para mostrar los mensajes de loading
 function showLoadingMessages() {
   if (currentMessageIndex < loadingMessages.length) {
     loadingMessageElement.textContent = loadingMessages[currentMessageIndex];
     currentMessageIndex++;
     setTimeout(showLoadingMessages, 2000); // Cambia el mensaje cada 2 segundos
   } else {
-    // Ocultar el loading screen y mostrar el contenido principal
+    // Termina el loading y muestra el contenido principal
     loadingScreen.classList.add("hidden");
     mainContent.classList.remove("hidden");
   }
@@ -28,7 +28,7 @@ function showLoadingMessages() {
 // Iniciar el loading al cargar la página
 window.onload = showLoadingMessages;
 
-// Lógica para el formulario y la adivinanza
+// Lógica del formulario y la adivinanza
 document.getElementById("availability-form").addEventListener("submit", function (e) {
   e.preventDefault();
   const time = document.getElementById("time").value;
@@ -39,11 +39,13 @@ document.getElementById("availability-form").addEventListener("submit", function
 });
 
 document.getElementById("submit-riddle").addEventListener("click", function () {
-  const answer = document.getElementById("riddle-answer").value.toLowerCase();
-  if (answer === "mañana" || answer === "el futuro") {
+  const answer = parseInt(document.getElementById("riddle-answer").value, 10);
+  const correctAnswer = 29 * 71 - 34; // Cálculo esperado
+
+  if (answer === correctAnswer) {
     document.getElementById("riddle-section").classList.add("hidden");
     document.getElementById("surprise-section").classList.remove("hidden");
   } else {
-    alert("¡Inténtalo de nuevo! Piensa en algo que siempre está por venir.");
+    alert("¡Inténtalo de nuevo! Pista: realiza el cálculo con calma.");
   }
 });
