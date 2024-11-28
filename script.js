@@ -38,6 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (answer === correctAnswer) {
       document.getElementById("riddle-section").classList.add("hidden");
       document.getElementById("surprise-section").classList.remove("hidden");
+
+      // Disparar confeti
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
     } else {
       alert("¡Inténtalo de nuevo! Pista: realiza el cálculo con calma.");
     }
