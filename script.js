@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const loadingMessages = [
-    "Activando partículas de pancho de Tristán Narvaja...",
+    "Activando cámara de fotos y moliendo cafe de especialidad...",
     "Generando texturas de barritas de cereal...",
     "Afinando voz para cantar canciones cuya letra no me acuerdo...",
     "Activando recuerdos felices con el amor de mi vida..."
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("availability-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const time = document.getElementById("time").value;
-    alert(`¡Gracias, amor! Nos veremos en la ${time}. 💕`);
+    alert(`Oki amor, nos vemos a las ${time}. 💕`);
     document.getElementById("riddle-section").classList.remove("hidden");
   });
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         origin: { y: 0.6 }
       });
     } else {
-      alert("¡Inténtalo de nuevo! Pista: realiza el cálculo con calma.");
+      alert("Chill bro, vos podes");
     }
   });
 });
